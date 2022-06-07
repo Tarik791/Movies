@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filmovi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<style>
+
+		#optionSelected{
+			background-color: rgb(158, 137, 137);
+		}
+	</style>
+
+	<h1>Filmovi</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Filmovi</h2>
+
+			<div class="single-item" id="single-item1">
+				<img src="img/1.jpg">
+				<div class="si-content">
+					<h3>Lord of the Rings</h3>
+					<p class="price">$10</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+
+			<div class="single-item" id="single-item2">
+				<img src="img/2.jpg">
+				<div class="si-content">
+					<h3>Terminator</h3>
+					<p class="price">$20</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+
+			<div class="single-item" id="single-item3">
+				<img src="img/3.jpg">
+				<div class="si-content">
+					<h3>Who Am I</h3>
+					<p class="price">$30</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Korpa</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
